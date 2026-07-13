@@ -1,0 +1,117 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.register-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.register-card h2 {
+  margin-bottom: 24px;
+  color: #111827;
+  text-align: center;
+}
+
+.register-card .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  width: 100%; /* Ensures inputs stretch to the card edges */
+}
+
+.register-card .input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+  text-align: center; /* Keeps your text aligned nicely above boxes */
+}
+
+.register-card .input-group input,
+.register-card .custom-select {
+  width: 100%; /* Keeps original box styling but prevents clipping */
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Fixes browser autofill forcing dark background colors */
+.register-card input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #1f2937 !important;
+}
+
+.register-card .radio-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers your male/female selectors nicely */
+}
+
+.register-card .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.register-card .password-field-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.register-card .password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.register-card .checkbox-group {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.register-card .checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #4338ca;
+}

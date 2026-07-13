@@ -1,0 +1,87 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.login-card h2 {
+  margin-bottom: 24px;
+  color: #111827;
+  text-align: center;
+}
+
+.login-card .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.login-card .input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+  text-align: center; /* Keeps the label centered */
+}
+
+.login-card .input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Fixes browser autofill forcing dark background colors */
+.login-card input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #1f2937 !important;
+}
+
+.login-card .password-field-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login-card .password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #4338ca;
+}
